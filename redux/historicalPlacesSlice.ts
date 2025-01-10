@@ -82,7 +82,7 @@ const historicalPlacesSlice = createSlice({
       state.places = [];
       state.nextPageToken = null;
     },
-    fetchPlaceStart(state) {
+    fetchPlaceStart(state, action: PayloadAction<string>) {
       state.loading = true;
       state.error = null;
     },

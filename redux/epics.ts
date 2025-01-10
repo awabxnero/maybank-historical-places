@@ -95,7 +95,7 @@ const fetchPlaceDetails = async (placeId: string): Promise<any> => {
   }
 };
 
-export const fetchHistoricalPlacesEpic: Epic = (action$, state$) =>
+export const fetchHistoricalPlacesEpic: Epic = (action$, state$:any) =>
   action$.pipe(
     ofType(fetchPlacesStart.type),
     mergeMap(() =>

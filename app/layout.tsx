@@ -17,9 +17,9 @@ const store = configureStore({
     getDefaultMiddleware().concat(epicMiddleware),
 });
 
-epicMiddleware.run((action$, state$) => {
-  return combineEpics(fetchHistoricalPlacesEpic, fetchPlaceDetailsEpic)(action$, state$);
-});
+epicMiddleware.run(
+  combineEpics(fetchHistoricalPlacesEpic, fetchPlaceDetailsEpic)
+);
 
 export default function RootLayout({
   children,

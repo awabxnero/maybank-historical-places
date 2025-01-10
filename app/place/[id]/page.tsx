@@ -16,7 +16,7 @@ export default function PlaceDetails() {
   const { currentPlace: place, loading, error } = useSelector((state: any) => state.historicalPlaces);
 
   useEffect(() => {
-    if (id) {
+    if (typeof id === 'string') {
       dispatch(fetchPlaceStart(id));
     }
     dispatch(syncVisitedState());
