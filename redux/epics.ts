@@ -11,7 +11,7 @@ import {
 } from './historicalPlacesSlice';
 
 // Note: The API key is exposed becuase this is just a prototype :)
-const API_KEY = 'AIzaSyBnZCWZrYTin3FPIzfHk0E6iAKQsy2WA-I';
+const API_KEY = 'AIzaSyB5fm-1V2fwu_Hg2N_sgSThdrLKNjDHQhA';
 
 const fetchHistoricalPlaces = async (nextPageToken: string | null): Promise<any> => {
   try {
